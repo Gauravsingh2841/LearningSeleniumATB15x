@@ -10,7 +10,7 @@ public class CssSelector {
         WebDriver driver = new ChromeDriver();
         driver.get("");
 
-        WebElement table = driver.findElement(By.cssSelector("//table[@summary=\"Sample Table\"]/tbody"));
+        WebElement table = driver.findElement(By.cssSelector("table[summary='Sample Table'] > tbody"));
         String color = table.getAttribute("color");
     }
 }
